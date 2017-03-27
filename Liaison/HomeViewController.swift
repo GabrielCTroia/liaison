@@ -66,10 +66,9 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     func startRecording() {
         print("recording")
         
-        view.backgroundColor = UIColor.red
-        
         recordButton.setTitle("Release", for: .normal)
         recordButton.addTarget(self, action: #selector(toggleRecord), for: .touchUpInside)
+        recordButton.backgroundColor = UIColor.red
         
         audioURL = getRecordingUrl();
         print(audioURL.absoluteURL)
@@ -93,6 +92,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     func finishRecording(success: Bool) {
         recorder.stop()
         recorder = nil
+        
+        recordButton.backgroundColor = UIColor.clear
         
         if success {
             print("Recording finished successfully")
