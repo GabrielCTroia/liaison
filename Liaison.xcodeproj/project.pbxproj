@@ -14,6 +14,10 @@
 		A85AA5081E7DC379000BA77F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A85AA5061E7DC379000BA77F /* LaunchScreen.storyboard */; };
 		A85AA5131E7DC379000BA77F /* LiaisonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85AA5121E7DC379000BA77F /* LiaisonTests.swift */; };
 		A85AA51E1E7DC379000BA77F /* LiaisonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85AA51D1E7DC379000BA77F /* LiaisonUITests.swift */; };
+		A85AA52E1E7E32F4000BA77F /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85AA52D1E7E32F4000BA77F /* Record.swift */; };
+		A85AA5321E7E3AE6000BA77F /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85AA5311E7E3AE6000BA77F /* RecordViewController.swift */; };
+		A86195211E888E4F00D033C2 /* RecordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86195201E888E4F00D033C2 /* RecordTableViewCell.swift */; };
+		A86195231E88909A00D033C2 /* RecordTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86195221E88909A00D033C2 /* RecordTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		A85AA5191E7DC379000BA77F /* LiaisonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiaisonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A85AA51D1E7DC379000BA77F /* LiaisonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiaisonUITests.swift; sourceTree = "<group>"; };
 		A85AA51F1E7DC379000BA77F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A85AA52D1E7E32F4000BA77F /* Record.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Record.swift; path = ../Record.swift; sourceTree = "<group>"; };
+		A85AA5311E7E3AE6000BA77F /* RecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecordViewController.swift; path = ../RecordViewController.swift; sourceTree = "<group>"; };
+		A86195201E888E4F00D033C2 /* RecordTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordTableViewCell.swift; sourceTree = "<group>"; };
+		A86195221E88909A00D033C2 /* RecordTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +105,13 @@
 		A85AA4FC1E7DC379000BA77F /* Liaison */ = {
 			isa = PBXGroup;
 			children = (
+				A85AA52D1E7E32F4000BA77F /* Record.swift */,
+				A85AA5311E7E3AE6000BA77F /* RecordViewController.swift */,
 				A85AA4FD1E7DC379000BA77F /* AppDelegate.swift */,
 				A85AA4FF1E7DC379000BA77F /* ViewController.swift */,
 				A85AA5011E7DC379000BA77F /* Main.storyboard */,
+				A86195221E88909A00D033C2 /* RecordTableViewController.swift */,
+				A86195201E888E4F00D033C2 /* RecordTableViewCell.swift */,
 				A85AA5041E7DC379000BA77F /* Assets.xcassets */,
 				A85AA5061E7DC379000BA77F /* LaunchScreen.storyboard */,
 				A85AA5091E7DC379000BA77F /* Info.plist */,
@@ -261,6 +273,10 @@
 			files = (
 				A85AA5001E7DC379000BA77F /* ViewController.swift in Sources */,
 				A85AA4FE1E7DC379000BA77F /* AppDelegate.swift in Sources */,
+				A85AA5321E7E3AE6000BA77F /* RecordViewController.swift in Sources */,
+				A86195211E888E4F00D033C2 /* RecordTableViewCell.swift in Sources */,
+				A86195231E88909A00D033C2 /* RecordTableViewController.swift in Sources */,
+				A85AA52E1E7E32F4000BA77F /* Record.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,6 +519,7 @@
 				A85AA5241E7DC379000BA77F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A85AA5251E7DC379000BA77F /* Build configuration list for PBXNativeTarget "LiaisonTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +528,7 @@
 				A85AA5271E7DC379000BA77F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A85AA5281E7DC379000BA77F /* Build configuration list for PBXNativeTarget "LiaisonUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +537,7 @@
 				A85AA52A1E7DC379000BA77F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

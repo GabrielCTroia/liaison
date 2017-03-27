@@ -82,8 +82,8 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioRecorderDele
         
         recordButton = UIButton()
         recordButton.translatesAutoresizingMaskIntoConstraints = false
-        recordButton.setTitle("Record", for: .normal)
-        recordButton.addTarget(self, action: #selector(toggleRecord),for: .touchUpInside )
+        recordButton.setTitle("Hold to record", for: .normal)
+        recordButton.addTarget(self, action: #selector(toggleRecord),for: .touchDown)
         
         playButton = UIButton()
         playButton.translatesAutoresizingMaskIntoConstraints = false
@@ -92,6 +92,13 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioRecorderDele
         
         stackView.addArrangedSubview(recordButton)
         stackView.addArrangedSubview(playButton)
+        
+    }
+    
+    func handleLongPress(gesture: UILongPressGestureRecognizer) {
+        if gesture.state == .began {
+            print("long press")
+        }
         
     }
     
@@ -137,6 +144,7 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioRecorderDele
     
     func toggleRecord() {
         if recorder == nil {
+            
             startRecording()
         } else {
             finishRecording(success: true)
@@ -148,7 +156,8 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioRecorderDele
         
         view.backgroundColor = UIColor.red
         
-        recordButton.setTitle("Tap to stop", for: .normal)
+        recordButton.setTitle("Release to stop", for: .normal)
+        recordButton.addTarget(self, action: #selector(toggleRecord), for: .touchUpInside)
         
         audioURL = getRecordingUrl();
         print(audioURL.absoluteURL)
@@ -178,7 +187,7 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioRecorderDele
         if success {
             print("Recording finished successfully")
         
-            recordButton.setTitle("Record", for: .normal)
+            recordButton.setTitle("Hold to record", for: .normal)
         
         } else {
             print("Recording failed")
@@ -193,7 +202,7 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioRecorderDele
     class func getDocumentsDirectory() -> URL {
         return FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
     }
-    
+    //
     //MARK: Actions
     @IBAction func setDefaultLabelText(_ sender: UIButton) {
         wordLabel.text = "Reset value"
