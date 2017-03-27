@@ -18,6 +18,7 @@
 		A85AA5321E7E3AE6000BA77F /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85AA5311E7E3AE6000BA77F /* RecordViewController.swift */; };
 		A86195211E888E4F00D033C2 /* RecordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86195201E888E4F00D033C2 /* RecordTableViewCell.swift */; };
 		A86195231E88909A00D033C2 /* RecordTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86195221E88909A00D033C2 /* RecordTableViewController.swift */; };
+		A86195251E88A7F800D033C2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86195241E88A7F800D033C2 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		A85AA5311E7E3AE6000BA77F /* RecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecordViewController.swift; path = ../RecordViewController.swift; sourceTree = "<group>"; };
 		A86195201E888E4F00D033C2 /* RecordTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordTableViewCell.swift; sourceTree = "<group>"; };
 		A86195221E88909A00D033C2 /* RecordTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordTableViewController.swift; sourceTree = "<group>"; };
+		A86195241E88A7F800D033C2 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				A85AA4FF1E7DC379000BA77F /* ViewController.swift */,
 				A85AA5011E7DC379000BA77F /* Main.storyboard */,
 				A86195221E88909A00D033C2 /* RecordTableViewController.swift */,
+				A86195241E88A7F800D033C2 /* HomeViewController.swift */,
 				A86195201E888E4F00D033C2 /* RecordTableViewCell.swift */,
 				A85AA5041E7DC379000BA77F /* Assets.xcassets */,
 				A85AA5061E7DC379000BA77F /* LaunchScreen.storyboard */,
@@ -276,6 +279,7 @@
 				A85AA5321E7E3AE6000BA77F /* RecordViewController.swift in Sources */,
 				A86195211E888E4F00D033C2 /* RecordTableViewCell.swift in Sources */,
 				A86195231E88909A00D033C2 /* RecordTableViewController.swift in Sources */,
+				A86195251E88A7F800D033C2 /* HomeViewController.swift in Sources */,
 				A85AA52E1E7E32F4000BA77F /* Record.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

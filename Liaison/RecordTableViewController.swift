@@ -49,7 +49,7 @@ class RecordTableViewController: UITableViewController {
         
         let record = records[indexPath.row]
         
-        cell.titleLabel.text = record.title
+        cell.wordNameLabel.text = "ad"
 
         return cell
     }
@@ -100,15 +100,15 @@ class RecordTableViewController: UITableViewController {
     */
     
     private func loadSampleRecords() {
-        guard let record1 = Record(title: "cat") else {
+        guard let record1 = Record(title: "cat", audioURL: URL(string: "cat.m4a")!) else {
             fatalError("Unable to instantiate meal1")
         }
         
-        guard let record2 = Record(title: "dog") else {
+        guard let record2 = Record(title: "dog", audioURL: URL(string: "cat.m4a")!) else {
             fatalError("Unable to instantiate meal1")
         }
         
-        guard let record3 = Record(title: "bird") else {
+        guard let record3 = Record(title: "bird", audioURL: URL(string: "cat.m4a")!) else {
             fatalError("Unable to instantiate meal1")
         }
         

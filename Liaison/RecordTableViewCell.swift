@@ -12,7 +12,8 @@ class RecordTableViewCell: UITableViewCell {
     
     //MARK: Properties
 
-    @IBOutlet weak var titleLabel: UILabel!
+    
+    @IBOutlet weak var wordNameLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()

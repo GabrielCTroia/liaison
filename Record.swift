@@ -11,16 +11,15 @@ import Foundation
 class Record {
 
     var title: String
-//    var audioURL: URL
+    var audioURL: URL
     
-    //init?(title: String, audioURL: URL) {
-    init?(title: String) {
-        if title.isEmpty {
+    init?(title: String, audioURL: URL) {
+        if title.isEmpty || audioURL.absoluteString.isEmpty {
             fatalError("The Record is empty")
         }
         
         self.title = title
-//        self.audioURL = audioURL
+        self.audioURL = audioURL
     }
     
 }
